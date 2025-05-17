@@ -114,8 +114,12 @@ async function InsertText(text, idx, element) {
 	await sleep(500);
 	element.innerHTML = 'A Future ProGrammer.<span id="cursor">|</span>';
 
-	secondIntro = document.querySelector('#hiddenIntro');
-	secondIntro.innerHTML = '<h1 class="mt-5">I am aiming to be multidisiplinary software engineer.</h1><h1>Welcome to be a withness of my journey.</h1>'
+	secondIntro1 = document.querySelector('#hiddenIntro1');
+	secondIntro2 = document.querySelector('#hiddenIntro2');
+	secondIntro1.innerHTML = '<h1 class="mt-5">I am aiming to be multidisiplinary software engineer.</h1>'
+	secondIntro2.innerHTML = '<h1>Welcome to be a withness of my journey.</h1>'
 	await sleep(300)
-	secondIntro.classList.add('show-intro')
+	secondIntro1.classList.add('show-intro')
+	await sleep(500)
+	secondIntro2.classList.add('show-intro')
 };
